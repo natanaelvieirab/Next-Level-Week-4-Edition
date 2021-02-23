@@ -1,0 +1,29 @@
+
+Configurando ambiente:
+https://www.notion.so/Instala-o-das-ferramentas-1c09af201b4b49c5bf1678842a96d9ab
+
+# Aula 01
+Houve toda uma introdução sobre o que é o projeto e descrição de alguns conceitos usados como o de API.
+
+> Criar a pasta "api" e entro
+> rodar o comando "yarn init -y" para criar o arquivo padrão "package.json"
+> instalando dependencias "yarn add express"
+Express é um micro framework para trabalhar com rotas.
+
+>Criando a pasta "src" e dentro o arquivo "server.ts"
+>Comando: yarn add @types/express -D . (-D referente para desenvolvimento) instalando depedencias das tipagens para facilitar no desenvolvimento.
+>comando: yarn add typescript -D Instalando o typerscript;
+>Instalando o TRADUTOR para que o node entendar o typescript: yarn tsc --init
+>Comando: yarn add ts-node-dev -D Converte o codigo Typescript automaticamente  para Javascript
+
+Importante: Em package.json , adicionar o seguinte código:
+"scripts":{
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    /*No qual:
+    --transpile-only irá ignorar as verificações das tipagens no código
+    --ignore-wacth node_modules irá ignora a pasta node_modules
+    */
+}
+Com o intuito de Criar um atalho (no caso é "dev") para rodar o comando especificado.
+
+Rodar o código: yarn dev
