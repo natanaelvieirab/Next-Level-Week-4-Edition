@@ -27,3 +27,38 @@ Importante: Em package.json , adicionar o seguinte código:
 Com o intuito de Criar um atalho (no caso é "dev") para rodar o comando especificado.
 
 Rodar o código: yarn dev
+
+# Aula 02 - Banco de Dados
+
+houve uma introdução sobre Banco de dados e uma comparação entre:
+> Driver. Ex> Diver do postgree: cada drive tem sua documentação, é necessário ler a documentação. Mudança de banco pode acarretar em uma grande mudança no código.
+> Knex . Também é prático pois com ele é facil de configurar e se precisar de mudar de banco não há grandes consequencias para o programa;
+> TyperORM: mais prático de se usar, pois ele mapear as classes criadas e assim crias as tabelas. Ex: Hibernate;
+
+Escolhido foi TyperORM e o Banco de dados : sqlite3
+comando: yarn add typeorm reflect-metadata
+comando: yarn add sqlite3
+
+em package.json adicionar script: "typeorm": "{conferir no package}"
+Crio a pasta migration em database
+
+Comando para criar migrations: yarn typeorm migration:create -n CreateUsers 
+Comando para rodar TODAS migrations: yarn typeorm migration:run
+Comando para rodar a ultima migrations executada: yarn typeorm migration:reverse
+
+Erro ao execultar o comando: yarn typeorm migration:run
+ERRO: 
+Error during migration run:
+Error: ⨯ Unable to compile TypeScript:
+An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option
+
+Como corrigit: adicione o seguinte trecho de código em "tsconfig.json":
+  "lib": ["es2015"]
+
+instalando o Beekeep Studio para verificar o meu banco de dados (já que a extensão do sqlite não está funcionando):
+  sudo snap install beekeeper-studio
+
+Foi criado diversas pastas e arquivos (controller models, User.ts, UserController.ts) foi modificado o package.json
+
+comando: yarn add uuid Criação de id pelo codigo do servidor e não deixar essa responsabilidade para o Banco de dados
+comando: yarn add @types/uuid -D para falicitar o uso do uuid .
