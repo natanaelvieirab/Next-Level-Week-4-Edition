@@ -62,3 +62,22 @@ Foi criado diversas pastas e arquivos (controller models, User.ts, UserControlle
 
 comando: yarn add uuid Criação de id pelo codigo do servidor e não deixar essa responsabilidade para o Banco de dados
 comando: yarn add @types/uuid -D para falicitar o uso do uuid .
+
+Aula 3
+
+comando: yarn typeorm migration:create -n CreateSurveys
+Criar migration "CreateSurveys"
+
+Tipos de Testes automatizados:
+
+- Testes unitarios: teste funções ou serviço especifico e individualmente
+- Teste de integração: testa a integração entre as funções, não é mais um teste sozinho
+- Teste Ponta a Ponta (E2E) : Testa a utilização do usuario do sistema
+
+comando: yarn add jest @types/jest -D Ira instalar o Jest que será responsavel por auxiliar teste automatizados
+comando : yarn add ts-jest -D
+comando: yarn test para rodar os testes
+comando: yarn add supertest @types/supertest -D
+
+
+
