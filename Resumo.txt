@@ -94,4 +94,22 @@ comando: yarn add handlebars
 
 Aula 5
 
+Tipos de Parametros na URL
+>Router Params: Parametros que compõe a rotas
+ex: routes.get("/answer/:value");
+>Query Params : Busca, paginação , não obrigatorios
+Sempre vem depois da interrogação (?), estrura: ?chave=valor
 
+DICA de ouro: Usando variaveis ambiente: 
+Passei meia hora tentado solucionar o erro para usar variaveis de ambiente, depois descobrir que o arquivo ".env" deve estar na raiz do projeto
+e não dentro da pasta src.
+
+Criando validações usando o "yup validation"
+comando: yarn add yap 
+
+em Package.json foi removido o seguinte trcho de código:
+"posttest": "rm ./src/database/database.test.sqlite"
+
+comando: yarn add express-async-errors
+
+#missionComplete
