@@ -1,6 +1,7 @@
 
 Configurando ambiente:
 https://www.notion.so/Instala-o-das-ferramentas-1c09af201b4b49c5bf1678842a96d9ab
+A Nlw 4 edition ocorreu na semana entre os dias 22/02/21 a 26/02/21
 
 # Aula 01
 Houve toda uma introdução sobre o que é o projeto e descrição de alguns conceitos usados como o de API.
@@ -79,5 +80,18 @@ comando : yarn add ts-jest -D
 comando: yarn test para rodar os testes
 comando: yarn add supertest @types/supertest -D
 
+Aula 4
+
+Comando: yarn typeorm migration:create -n CreatedSurveysUsers
+Biblioteca usado para enviar email: nodemailer
+e o Etheral com servico SMTP fake para realizar os testes
+comando: yarn add nodemailer @types/nodemailer -D
+
+Criar tampletes personalizados: handlebars
+comando: yarn add handlebars
+
+#neverStopLearning
+
+Aula 5
 
 
