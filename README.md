@@ -3,15 +3,15 @@
 
 # **Next Level Week 04 Edition**
  
-## Descrição
+## :sparkles: Descrição
 O projeto consiste em um API, no qual será calculado o **NPS(Net Promoter Score)**, este foi desenvolvido durante a realização da 4ª Edição da NLW (Next Level Week), promovido pela [Rocketseat](https://rocketseat.com.br/) e ministrada pela instrutora [Daniela Leão](https://github.com/danileao). 
 
-## O que é NPS ?
+## :notebook_with_decorative_cover: O que é NPS ?
 ![](./img/NET-PROMOTER-SCORE.png)
 
 O NPS é a abreviação para Net Promoter Score, é uma metodologia de satisfação de clientes, desenvolvida para avaliar o grau de fidelidade dos clientes de qualquer perfil de empresa. Para mais detalhes,[clique aqui!](https://www.zenvia.com/blog/como-calcular-o-nps-da-sua-empresa/).
 
-## Tecnologias
+## :wrench: Tecnologias
 Este projeto foi desenvolvido em Node.js com as seguintes tecnologias:
 * [Express](https://expressjs.com/pt-br/) ;
 * [Ethereal Email](https://ethereal.email/) 
@@ -21,16 +21,13 @@ Este projeto foi desenvolvido em Node.js com as seguintes tecnologias:
 * [Beekeeper](https://www.beekeeperstudio.io/) (editor de SQL e gerenciador de Banco de Dados) ;
 * [Insomia](https://insomnia.rest/) ;
 
-## Como executar
+## :computer: Como executar
 Para executar o projeto realize os seguintes passos:
-1. Instale o [Node.js]() em seu maquina.
-2. Instale o ```yarn```.
+1. Instale o [Node.js]() em sua maquina.
+2. Instale o gerenciador de pacotes [yarn](https://yarnpkg.com/).
 3. Clone o projeto em sua maquina;
 4. Na pasta do projeto rode o comando ```yarn dev``` para execulta-lo.
 
-**OBS.:** Há API estará sendo executada na porta 3333.
+**OBS.:** há aplicação poderá ser acessada em `localhost:3333` .
 
-<div class="center">
-    <p>Feito com muito :heart: por **Natanael Vieira**</p>
-    <>
-</div>
+Feito com muito :heart: por **Natanael Vieira**
