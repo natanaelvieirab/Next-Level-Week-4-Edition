@@ -26,8 +26,10 @@ Para executar o projeto realize os seguintes passos:
 1. Instale o [Node.js]() em sua maquina.
 2. Instale o gerenciador de pacotes [yarn](https://yarnpkg.com/).
 3. Clone o projeto em sua maquina;
-4. Na pasta do projeto rode o comando ```yarn dev``` para execulta-lo.
+4. Na pasta **api** do projeto, rode o comando `yarn install` para instalar as dependencias necessárias para a execução da aplicação.
+5. Após rodar o comando acima, rode `yarn dev` para execultar a aplicação.
 
 **OBS.:** há aplicação poderá ser acessada em `localhost:3333` .
 
+## 
 Feito com muito :heart: por **Natanael Vieira**
